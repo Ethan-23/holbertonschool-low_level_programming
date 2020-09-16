@@ -1,7 +1,9 @@
 #include <stdio.h>
 /**
- *This displays "Programming is like building a multilingual puzzle" when ran
-*/
+ * main - This displays what is in the put
+ *
+ * Return: 0
+ */
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
