@@ -1,15 +1,15 @@
 #include <stdio.h>
 /**
- * main - displays alphabet
+ * main - displays 0-9
  *
  * Return: 0
  */
 int main(void)
 {
-	char l;
+	char i;
 
-	for (l = 'a'; l <= 'z'; l++)
-		putchar(l);
+	for (i = 48; i <= 57; i++)
+		putchar(i);
 	putchar('\n');
 	return (0);
 }
