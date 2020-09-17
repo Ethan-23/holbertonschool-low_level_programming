@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Random number positive/negative
+ * main - Random number positive and negative
  *
  * Return: 0
  */
