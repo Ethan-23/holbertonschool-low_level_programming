@@ -1,5 +1,9 @@
 #include <stdio.h>
-
+/**
+ * main - This will output different combinations of 3 numbers
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	int i;
