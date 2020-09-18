@@ -1,5 +1,9 @@
 #include <stdio.h>
-
+/**
+ * main - Will display different combinations of numbers
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	int i;
@@ -11,11 +15,11 @@ int main(void)
 		{
 			putchar(i);
 			putchar(c);
-		       if (i + c <= 112)
-		       {
-			       putchar(',');
-			       putchar(' ');
-		       }
+			if (i + c <= 112)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
