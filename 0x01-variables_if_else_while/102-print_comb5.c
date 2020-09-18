@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * main - Displays numbers
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	int a;
