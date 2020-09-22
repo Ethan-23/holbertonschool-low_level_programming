@@ -14,19 +14,22 @@ void times_table(void)
 	{
 		for (mult = 0; mult <= 9; mult++)
 		{
-			if (number * mult > 9)
+			if ((number * mult) <= 9)
 			{
-				_putchar(mult * number / 10 + '0');
-				_putchar(mult * number % 10 + '0');
+				if (mult > 0)
+				{
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
+				}
+				_putchar('0' + mult * number);
 			}
 			else
 			{
-			_putchar('0' + mult * number);
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(mult * number / 10 + '0');
+				_putchar(mult * number % 10 + '0');
 			}
 		}
 		_putchar('\n');
