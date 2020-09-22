@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * _isalpha - detects letters vs numbers.
  * @c: test
  * Return: Always 0.
  */
