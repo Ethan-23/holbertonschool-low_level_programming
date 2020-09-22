@@ -1,17 +1,17 @@
 #include "holberton.h"
 /**
- * int_islower - This will tell you if a character is lower or not
- *
+ * _islower - detects lowercase
+ * @c: test
  * Return: 0
  */
-int int_islower(int c)
+int _islower(int c)
 {
-	if (c >= 97)
+	if (c >= 'a' && c <= 'z')
 	{
-		_putchar(48);
+		return (1);
 	}
 	else
 	{
-		_putchar(49);
+		return (0);
 	}
 }
