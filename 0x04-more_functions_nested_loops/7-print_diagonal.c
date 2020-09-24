@@ -2,7 +2,7 @@
 
 /**
  * print_diagonal - check the code for Holberton School students.
- *
+ * @n: number var
  * Return: Always 0.
  */
 void print_diagonal(int n)
@@ -22,5 +22,8 @@ void print_diagonal(int n)
 		b = b + 1;
 		}
 	}
-	_putchar('\n');
+	else
+	{
+		_putchar('\n');
+	}
 }
