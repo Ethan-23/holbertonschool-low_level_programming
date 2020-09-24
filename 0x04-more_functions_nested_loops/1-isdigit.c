@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * _isdigit - check the code for Holberton School students.
+ * @c: number input
  * Return: Always 0.
  */
 int _isdigit(int c)
