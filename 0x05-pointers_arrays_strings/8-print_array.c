@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * print_array - check the code for Holberton School students.
+ * @a: array num
+ * @n: end num
  * Return: Always 0.
  */
 void print_array(int *a, int n)
