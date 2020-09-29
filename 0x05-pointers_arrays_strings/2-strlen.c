@@ -10,5 +10,5 @@
 
 int _strlen(char *s)
 {
-	return (*s/8);
+	return (*s / 7);
 }
