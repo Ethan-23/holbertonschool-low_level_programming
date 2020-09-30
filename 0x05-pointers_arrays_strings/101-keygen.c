@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main(void){
         int max = 126;
         int current = 0;
         int randchar = 0;
 
+        srand (time(NULL));
         while (current != 2772){
                 randchar = rand() % max;
                 while (randchar < 33)
