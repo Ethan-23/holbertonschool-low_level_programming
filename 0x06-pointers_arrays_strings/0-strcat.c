@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strcar - check the code for Holberton School students.
+ * _strcat - check the code for Holberton School students.
  * @dest: var
  * @src: var
  * Return: Always 0.
