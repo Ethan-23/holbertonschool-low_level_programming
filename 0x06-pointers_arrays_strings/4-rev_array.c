@@ -10,15 +10,10 @@
  */
 void reverse_array(int *a, int n)
 {
-	int count = 0;
+	int count = n-1;
 	int count2 = 0;
 	int hold;
 
-	while (a[count] != a[n])
-	{
-		count++;
-	}
-	count--;
 	while (count > count2)
 	{
 		hold = a[count2];
