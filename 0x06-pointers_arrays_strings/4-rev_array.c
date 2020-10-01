@@ -18,7 +18,7 @@ void reverse_array(int *a, int n)
 	{
 		count++;
 	}
-	while (count > count2)
+	while ((count > count2) || (count >= count2))
 	{
 		count--;
 		hold = a[count2];
