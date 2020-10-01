@@ -18,12 +18,13 @@ void reverse_array(int *a, int n)
 	{
 		count++;
 	}
-	while (count >= count2)
+	count--;
+	while (count > count2)
 	{
-		count--;
 		hold = a[count2];
 		a[count2] = a[count];
 		a[count] = hold;
 		count2++;
+		count--;
 	}
 }
