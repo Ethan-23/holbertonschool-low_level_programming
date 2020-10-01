@@ -2,8 +2,10 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * _strncpy - check the code for Holberton School students.
+ * @dest: 1st string
+ * @src: 2nd string
+ * @n: user input
  * Return: Always 0.
  */
 char *_strncpy(char *dest, char *src, int n)
