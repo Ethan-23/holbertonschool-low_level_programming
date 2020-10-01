@@ -12,13 +12,13 @@ void reverse_array(int *a, int n)
 {
 	int count = 0;
 	int count2 = 0;
-	int hold = 0;
+	int hold;
 
-	while (a[count] < a[n])
+	while (a[count] != a[n])
 	{
 		count++;
 	}
-	while ((count > count2) || (count >= count2))
+	while (count > count2)
 	{
 		count--;
 		hold = a[count2];
