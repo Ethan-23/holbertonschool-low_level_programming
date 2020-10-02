@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * leet - check the code for Holberton School students.
+ * @a: input string
  * Return: Always 0.
  */
 char *leet(char *a)
