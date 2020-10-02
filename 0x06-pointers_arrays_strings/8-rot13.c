@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * rot13 - check the code for Holberton School students.
+ * @a: input string
  * Return: Always 0.
  */
 char *rot13(char *a)
