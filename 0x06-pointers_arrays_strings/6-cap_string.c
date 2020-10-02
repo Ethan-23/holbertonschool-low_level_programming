@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * cap_string - check the code for Holberton School students.
+ * @a: input string
  * Return: Always 0.
  */
 char *cap_string(char *a)
@@ -12,7 +12,7 @@ char *cap_string(char *a)
 	int count = 0;
 	char *t = " \t\n,;.!?\"(){}";
 
-	if (a[0] >= 'a' && a[0]<= 'z')
+	if (a[0] >= 'a' && a[0] <= 'z')
 		a[0] -= 32;
 		while (a[count] != '\0')
 		{
