@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * _strchr - check the code for Holberton School students.
  * @s: pointer
  * @c: given character
  * Return: Always 0.
