@@ -3,7 +3,8 @@
 
 /**
  * main - check the code for Holberton School students.
- *
+ * @s: pointer
+ * @c: given character
  * Return: Always 0.
  */
 char *_strchr(char *s, char c)
