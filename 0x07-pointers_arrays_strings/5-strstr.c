@@ -22,8 +22,11 @@ char *_strstr(char *haystack, char *needle)
 			{
 				if (*haystack == needle[count])
 				{
-					check++;
-					haystack++;
+					if (needle[count] != '\0')
+					{
+						check++;
+						haystack++;
+					}
 				}
 			}
 			if (check == count)
