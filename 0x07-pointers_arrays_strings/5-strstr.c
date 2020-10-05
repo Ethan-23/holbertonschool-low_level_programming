@@ -13,7 +13,7 @@ char *_strstr(char *haystack, char *needle)
 	int count = 0;
 	int check = 0;
 
-	for (; haystack != '\0'; haystack++)
+	for (; *haystack != '\0'; haystack++)
 	{
 		count = 0;
 		if (*haystack == needle[count])
@@ -22,11 +22,8 @@ char *_strstr(char *haystack, char *needle)
 			{
 				if (*haystack == needle[count])
 				{
-					if (needle[count] != '\0')
-					{
-						check++;
-						haystack++;
-					}
+					check++;
+					haystack++;
 				}
 			}
 			if (check == count)
