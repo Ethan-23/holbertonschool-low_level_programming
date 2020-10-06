@@ -10,10 +10,10 @@
 void print_diagsums(int *a, int size)
 {
 	int fsize = size * size;
-	int i;
-	int j;
-	int sum;
-	int sum2;
+	int i = 0;
+	int j = 0;
+	int sum = 0;
+	int sum2 = 0;
 
 	for (i = 0; i < fsize; i += size + 1)
 		sum += a[i];
