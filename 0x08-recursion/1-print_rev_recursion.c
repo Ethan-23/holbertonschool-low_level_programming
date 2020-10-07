@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * _print_rev_recursion - check the code for Holberton School students.
+ * @s: input string
  * Return: Always 0.
  */
 void _print_rev_recursion(char *s)
