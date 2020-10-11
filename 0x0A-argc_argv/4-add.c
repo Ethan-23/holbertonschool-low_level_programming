@@ -9,15 +9,19 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
-	int sum;
+	int i = 0;
+	int sum = 0;
+	int j = 0;
 
 	for (i = 1; i < argc; i++)
 	{
-		if (atoi(argv[i]) < 1)
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (isdigit(argv[i][j]) == 0)
 		{
 			printf("Error\n");
 			return (1);
+		}
 		}
 		sum += atoi(argv[i]);
 	}
