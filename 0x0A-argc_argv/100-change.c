@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *
- *
- *
- *
- *
+ * main - counts coins
+ * @argc: test
+ * @argv: test
+ * Return: 0
  **/
 int main(int argc __attribute__((unused)), char *argv[])
 {
@@ -13,12 +12,18 @@ int main(int argc __attribute__((unused)), char *argv[])
 	int coin = 0;
 	int count = atoi(argv[1]);
 	int check[] = {25, 10, 5, 1};
+
+	if (count % 1 != 0)
+	{
+		printf("Error\n");
+		return (1);
+	}
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-       	if (count < 0)
+	if (count < 0)
 	{
 		printf("0\n");
 		return (0);
