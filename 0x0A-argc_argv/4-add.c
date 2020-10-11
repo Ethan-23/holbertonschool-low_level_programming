@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *
- *
- *
- *
- *
+ * main - adds numbers
+ * @argc: test
+ * @argv: test
+ * Return: 0
  **/
 
 int main(int argc, char *argv[])
@@ -17,7 +16,7 @@ int main(int argc, char *argv[])
 	{
 		if (atoi(argv[i]) < 1)
 		{
-			printf("ERROR\n");
+			printf("Error\n");
 			return (1);
 		}
 		sum += atoi(argv[i]);
