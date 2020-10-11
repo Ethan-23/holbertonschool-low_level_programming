@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *
- *
- *
- *
+ * main - prints args
+ * @argc: test
+ * @argv: test
+ * Return: 0
  **/
 int main(int argc, char *argv[])
 {
