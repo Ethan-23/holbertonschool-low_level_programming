@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * main - counts coins
  * @argc: test
@@ -9,6 +10,7 @@
 int main(int argc __attribute__((unused)), char *argv[])
 {
 	int i = 0;
+	int j = 0;
 	int coin = 0;
 	int check[] = {25, 10, 5, 1};
 	int count = 0;
@@ -17,6 +19,14 @@ int main(int argc __attribute__((unused)), char *argv[])
 	{
 		printf("Error\n");
 		return (1);
+	}
+	for (j = 0; argv[1][j] != '\0'; j++)
+	{
+		if (isdigit(argv[1][j]) == 0)
+		{
+			printf("Error\n");
+				return (1);
+		}
 	}
 	count = atoi(argv[1]);
 	if (count < 0)
