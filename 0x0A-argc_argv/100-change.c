@@ -11,7 +11,7 @@ int main(int argc __attribute__((unused)), char *argv[])
 {
 	int i = 0;
 	int coin = 0;
-	int check[] = {25, 10, 5, 1};
+	int check[] = {25, 10, 5, 2, 1};
 	int count = 0;
 
 	if (argc > 2 || argc == 1)
