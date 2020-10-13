@@ -2,9 +2,8 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- * str_concat - cats 2 strings
- * @s1: string 1
- * @s2: string 2
+ * str_length - cats 2 strings
+ * @x: string 1
  * Return: 0
  */
 int str_length(char *x)
@@ -16,6 +15,12 @@ int str_length(char *x)
         }
 	return (i);
 }
+/**
+ * str_concat - cats 2 strings
+ * @s1: string 1
+ * @s2: string 2
+ * Return: 0
+ */
 char *str_concat(char *s1, char *s2)
 {
 	char *ar;
@@ -43,5 +48,6 @@ char *str_concat(char *s1, char *s2)
 		ar[i] = s2[j];
 		i++;
 	}
+	ar[i] = '\0';
 	return (ar);
 }
