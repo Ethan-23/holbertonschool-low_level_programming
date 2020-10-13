@@ -7,7 +7,7 @@
  */
 int str_leng(char *a)
 {
-	int i;
+	int i = 0;
 	for (i = 0; a[i] != '\0'; i++)
 	{
 
@@ -22,7 +22,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	ar = malloc(sizeof(add) * sizeof(char));
+	ar = malloc(add + 1 * sizeof(char));
 	if (ar == 0)
 		return (NULL);
 	for (i = 0; str[i] != '\0'; i++)
