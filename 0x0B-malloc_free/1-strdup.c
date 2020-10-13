@@ -15,6 +15,8 @@ char *_strdup(char *str)
 	if (ar == NULL)
 		return (NULL);
 	size = sizeof(str)/sizeof(char);
+	if (size < ar)
+		return (NULL);
 	for (i = 0; i <= size; i++)
 	ar[i] = str[i];
 	return (ar);
