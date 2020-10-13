@@ -17,13 +17,13 @@ int str_leng(char *a)
 char *_strdup(char *str)
 {
 	char *ar;
-	int i;
+	int i = 0;
 	int add = str_leng(str);
 
 	if (str == NULL)
 		return (NULL);
 	ar = malloc(add + 1 * sizeof(char));
-	if (ar == 0)
+	if (ar == NULL)
 		return (NULL);
 	for (i = 0; str[i] != '\0'; i++)
 		ar[i] = str[i];
