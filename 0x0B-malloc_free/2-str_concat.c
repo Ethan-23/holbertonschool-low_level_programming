@@ -2,20 +2,6 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- * str_length - cats 2 strings
- * @x: string 1
- * Return: 0
- */
-int str_length(char *x)
-{
-        int i;
-        for (i = 0; x[i] != '\0'; i++)
-        {
-
-        }
-	return (i);
-}
-/**
  * str_concat - cats 2 strings
  * @s1: string 1
  * @s2: string 2
@@ -26,7 +12,8 @@ char *str_concat(char *s1, char *s2)
 	char *ar;
 	unsigned int j;
 	unsigned int i;
-	int totalsize = str_length(s1) + str_length(s2);
+	int size1 = 0;
+	int size2 = 0;
 
 	if (s1 == NULL)
 	{
@@ -36,7 +23,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	ar = malloc(sizeof(totalsize) + sizeof(char));
+	while (s1[size1] != '\0')
+		size1++;
+	while (s2[size2] != '\0')
+		size2++;
+	ar = malloc(size1 + size2 + 1);
 	if (ar == NULL)
 		return (NULL);
 	for (i = 0; s1[i] != '\0'; i++)
