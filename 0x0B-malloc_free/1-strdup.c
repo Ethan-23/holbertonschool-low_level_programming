@@ -1,19 +1,25 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * _strdup - something
- * @str: something
+ * str_leng - something
+ * @a: something
  * Return: 0
  */
 int str_leng(char *a)
 {
 	int i = 0;
+
 	for (i = 0; a[i] != '\0'; i++)
 	{
 
 	}
 	return (i);
 }
+/**
+ * _strdup - thing
+ * @str: test
+ * Return: 0
+ */
 char *_strdup(char *str)
 {
 	char *ar;
@@ -22,7 +28,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	ar = malloc(add + 1 * sizeof(char));
+	ar = malloc(1 + add * sizeof(char));
 	if (ar == NULL)
 		return (NULL);
 	for (i = 0; str[i] != '\0'; i++)
