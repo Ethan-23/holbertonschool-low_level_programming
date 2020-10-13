@@ -21,7 +21,7 @@ char *str_concat(char *s1, char *s2)
 	char *ar;
 	unsigned int j;
 	unsigned int i;
-	int totalsize = str_length(s1) * str_length(s2);
+	int totalsize = str_length(s1) + str_length(s2);
 
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
