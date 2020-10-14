@@ -14,8 +14,10 @@ char *argstostr(int ac __attribute__((unused)), char **av)
 	char *test;
 	int i;
 	int j;
-	int k;
+	int k = 0;
 
+	if (av == 0 || av == NULL)
+		return (NULL);
 	while (av[ai])
 	{
 		for (wi = 0; av[ai][wi]; wi++)
@@ -26,6 +28,8 @@ char *argstostr(int ac __attribute__((unused)), char **av)
 	}
 	len++;
 	test = malloc(sizeof(char) * len);
+	if (test == NULL)
+		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[j] != '\0'; j++)
