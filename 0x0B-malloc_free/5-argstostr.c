@@ -16,7 +16,7 @@ char *argstostr(int ac, char **av)
 	int j = 0;
 	int k = 0;
 
-	if (av == 0 || av == NULL)
+	if (ac == 0 || av == NULL)
 		return (NULL);
 	while (av[i])
 	{
