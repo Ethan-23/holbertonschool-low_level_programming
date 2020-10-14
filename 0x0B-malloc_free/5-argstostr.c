@@ -8,12 +8,12 @@
  * @av: test
  * Return: Always 0.
  */
-char *argstostr(int ac __attribute__((unused)), char **av)
+char *argstostr(int ac, char **av)
 {
 	int ai = 1, wi, len = 0;
 	char *test;
-	int i;
-	int j;
+	int i = 0;
+	int j = 0;
 	int k = 0;
 
 	if (av == 0 || av == NULL)
