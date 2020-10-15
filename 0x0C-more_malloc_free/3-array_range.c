@@ -12,10 +12,17 @@ int *array_range(int min, int max)
 {
 	int *check;
 	int total = max - min + 1;
+	int i;
 
 	if (min > max)
 		return (NULL);
 	check = malloc(total * sizeof(int));
 	if (check == NULL)
 		return (NULL);
+	for (i = 0; i < total; i++)
+	{
+		check[i] = min;
+		min++;
+	}
+	return (check);
 }
