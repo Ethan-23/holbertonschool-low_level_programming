@@ -3,8 +3,10 @@
 #include <stdlib.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * string_nconcat - check the code for Holberton School students.
+ * @s1: Given string 1
+ * @s2: Given string 2
+ * @n: Given length of string 2
  * Return: Always 0.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -29,7 +31,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		size2++;
 	ar = malloc(size1 + size2 + 1);
 	if (ar == NULL)
+	{
+		free(ar);
 		return (NULL);
+	}
 	for (i = 0; s1[i] != '\0'; i++)
 	{
 		ar[i] = s1[i];
