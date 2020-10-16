@@ -31,24 +31,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (new_size < old_size)
 		old_size = new_size;
 	trash = malloc(new_size);
-	if (trash == NULL)
-	{
-		free(trash);
-		return (NULL);
-	}
-	count = (new_size - old_size) + 1;
-	for (i = 0; i < count; i++)
+	for (i = 0; i < old_size; i++)
 		trash[i] = ptr1[i];
 	free(ptr);
-	ptr1 = malloc(new_size);
-	if (ptr1 == NULL)
-	{
-		free(ptr1);
-		free(trash);
-		return (NULL);
-	}
-	for (i = 0; i < new_size; i++)
-		ptr1[i] = trash[i];
-	free(trash);
-	return (ptr1);
+	return (trash);
 }
