@@ -4,15 +4,16 @@
 #include "holberton.h"
 /**
  *_realloc - bla
- *@ptr: n;a
+ *@ptr: thing
  *@old_size: bla
  *@new_size: bla
  *Return: bla
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	unsigned int count = 0, i = 0;
-	char *trash, *ptr1 = ptr;
+	unsigned int i = 0;
+	char *trash;
+	char *ptr1 = ptr;
 
 	if (new_size == old_size)
 		return (ptr);
