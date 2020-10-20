@@ -3,8 +3,10 @@
 #include "dog.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * new_dog - check the code for Holberton School students.
+ * @name: test
+ * @age: test
+ * @owner: test
  * Return: Always 0.
  */
 dog_t *new_dog(char *name, float age, char *owner)
@@ -35,9 +37,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free((*copy).name);
 		return (NULL);
 	}
-        for (i = 0; owner[i] != '\0'; i++)
-        {
-                (*copy).owner[i] = owner[i];
-        }
+	for (i = 0; owner[i] != '\0'; i++)
+	{
+		(*copy).owner[i] = owner[i];
+	}
 	return (copy);
 }
