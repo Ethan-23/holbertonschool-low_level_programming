@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * add_node - check the code for Holberton School students.
+ * list_len - check the code for Holberton School students.
  * @h: list
  * Return: Always 0.
  */
