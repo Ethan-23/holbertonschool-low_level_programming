@@ -4,8 +4,8 @@
 #include "lists.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * free_list - check the code for Holberton School students.
+ * @head: given list
  * Return: Always 0.
  */
 
@@ -17,6 +17,7 @@ void free_list(list_t *head)
 	{
 		temp = head;
 		head = head->next;
+		free(temp->str);
 		free(temp);
 	}
 }
