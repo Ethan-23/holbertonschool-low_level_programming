@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * dlistint_t - check the code for Holberton School students.
+ * dlistint_len - check the code for Holberton School students.
  * @h: given var
  * Return: Always 0.
  */
