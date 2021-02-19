@@ -1,0 +1,8 @@
+CC = gcc $(OBJ) -o $(NAME)
+SRC = main.c holberton.c
+OBJ = main.o holberton.o
+NAME = holberton
+all:
+	gcc    -c -o main.o main.c
+	gcc    -c -o holberton.o holberton.c
+	$(CC)
