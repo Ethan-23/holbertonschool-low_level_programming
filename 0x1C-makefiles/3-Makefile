@@ -8,12 +8,12 @@ all: $(OBJ) $(SRC)
 
 clean:
 	$(RM) *~
+	$(RM) $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
 
 fclean: clean oclean
-	$(RM) $(NAME)
 
 
 re: all oclean
